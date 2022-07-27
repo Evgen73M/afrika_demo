@@ -1,0 +1,144 @@
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+  position: relative;
+  /* border: 1px solid brown; */
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  z-index: 130;
+  padding: 0 15px;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 51.5%;
+  max-width: 51.5%;
+  user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  /* top: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* color: #fff; */
+  text-align: center;
+  /* background: rgb(0 0 0 / 20%); */
+  /* transform: translateY(-50%); */
+}
+
+.position-prev {
+  position: absolute;
+  /* top: 0; */
+  left: 100px;
+  bottom: 0;
+}
+
+.position-next {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide="prev"] {
+  /* left: 0; */
+}
+
+.slider__control[data-slide="next"] {
+  /* right: 0; */
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: rgba(255, 255, 255, 0.492);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.761);
+  outline: 0;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg width='100px' height='100px' viewBox='0 0 100 100' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpath d='M0 0L100 0L100 100L0 100L0 0Z' id='path_1' /%3E%3CclipPath id='mask_1'%3E%3Cuse xlink:href='%23path_1' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='right-arrow-next-svgrepo-com'%3E%3Cpath d='M0 0L100 0L100 100L0 100L0 0Z' id='Background' fill='%23FFFFFF' fill-opacity='0' fill-rule='evenodd' stroke='none' /%3E%3Cg clip-path='url(%23mask_1)'%3E%3Cpath d='M50 1.0416C22.4375 1.0416 0 23 0 50C0 77 22.4375 98.9584 50 98.9584C77.5625 98.9584 100 77 100 50C100 23 77.5625 1.0416 50 1.0416L50 1.0416ZM50 94.7916C24.7291 94.7916 4.1666 74.6875 4.1666 50C4.1666 25.3125 24.7291 5.20839 50 5.20839C75.2709 5.20839 95.8334 25.2916 95.8334 50C95.8334 74.7084 75.2709 94.7916 50 94.7916L50 94.7916Z' id='Shape' fill='%23014949' fill-rule='evenodd' stroke='none' /%3E%3Cpath d='M72.125 48.3334L36.6459 22.2709C35.7293 21.5625 34.4375 21.7293 33.7293 22.6459C33.0209 23.5625 33.1877 24.8543 34.1043 25.5625C34.1252 25.5834 34.1668 25.6041 34.1877 25.625L67.375 50L34.1875 74.3541C33.25 75.0416 33.0625 76.3332 33.75 77.2707C34.4375 78.2082 35.7291 78.3957 36.6666 77.7082L72.1459 51.6875C73.0834 51 73.2709 49.7084 72.5834 48.7709C72.4375 48.6041 72.2916 48.4584 72.125 48.3334L72.125 48.3334Z' id='Shape' fill='%23014949' stroke='none' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg width='100px' height='100px' viewBox='0 0 100 100' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpath d='M0 0L100 0L100 100L0 100L0 0Z' id='path_1' /%3E%3CclipPath id='mask_1'%3E%3Cuse xlink:href='%23path_1' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='right-arrow-next-svgrepo-com'%3E%3Cpath d='M0 0L100 0L100 100L0 100L0 0Z' id='Background' fill='%23FFFFFF' fill-opacity='0' fill-rule='evenodd' stroke='none' /%3E%3Cg clip-path='url(%23mask_1)'%3E%3Cpath d='M50 1.0416C22.4375 1.0416 0 23 0 50C0 77 22.4375 98.9584 50 98.9584C77.5625 98.9584 100 77 100 50C100 23 77.5625 1.0416 50 1.0416L50 1.0416ZM50 94.7916C24.7291 94.7916 4.1666 74.6875 4.1666 50C4.1666 25.3125 24.7291 5.20839 50 5.20839C75.2709 5.20839 95.8334 25.2916 95.8334 50C95.8334 74.7084 75.2709 94.7916 50 94.7916L50 94.7916Z' id='Shape' fill='%23014949' fill-rule='evenodd' stroke='none' /%3E%3Cpath d='M72.125 48.3334L36.6459 22.2709C35.7293 21.5625 34.4375 21.7293 33.7293 22.6459C33.0209 23.5625 33.1877 24.8543 34.1043 25.5625C34.1252 25.5834 34.1668 25.6041 34.1877 25.625L67.375 50L34.1875 74.3541C33.25 75.0416 33.0625 76.3332 33.75 77.2707C34.4375 78.2082 35.7291 78.3957 36.6666 77.7082L72.1459 51.6875C73.0834 51 73.2709 49.7084 72.5834 48.7709C72.4375 48.6041 72.2916 48.4584 72.125 48.3334L72.125 48.3334Z' id='Shape' fill='%23014949' stroke='none' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  transform: rotate(180deg);
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-right: 15%;
+  margin-bottom: 0;
+  margin-left: 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider__indicators li {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.slider__indicators li.active {
+  background-color: rgb(255 255 255 / 90%);
+}

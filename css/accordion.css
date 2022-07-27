@@ -1,0 +1,105 @@
+.accordion__item {
+  border-top: 2px solid #d3d3d3;
+}
+.accordion__item:nth-child(4) {
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  padding: 25px 0 25px 0;
+  font-size: 22px;
+  font-family: "Kanit", sans-serif;
+  color: #2c3134;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.icon-1::before {
+  content: "";
+  text-align: right;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url("../img/icon/icon-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-2::before {
+  content: "";
+  text-align: right;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url("../img/icon/icon-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-3::before {
+  content: "";
+  text-align: right;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url("../img/icon/icon-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-4::before {
+  content: "";
+  text-align: right;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url("../img/icon/icon-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion__header:hover {
+  background: #ffff;
+}
+
+.accordion__item_hidden .accordion__header {
+}
+
+.accordion__body {
+  font-family: "Kanit", sans-serif;
+  color: #818181;
+  padding: 0 10px 25px 60px;
+  overflow: hidden;
+  margin-top: -25px;
+  transition: 250ms ease-in-out;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__header {
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+/* accordion-block */
+
+.accordion-block__none {
+  display: none;
+}
+
+.accordion-block__show {
+  display: block;
+}
