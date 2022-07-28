@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
     <title> Afrika</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
   </head>
@@ -145,7 +145,7 @@
                 <a class="video-overlay-close">&times;</a>
               </div>
 
-              <img src="img/Slice.png" alt="#">
+              <img class="img-video" src="img/Slice.png" alt="#">
 
             </div>
           </div>
@@ -169,18 +169,21 @@
 
             <!-- video block -->
             <div class="about-item__video-block">
-              <div class="video-wrapper">
+              <div class="video-wrapper-2">
                 <!-- Вставить видео  -->
                 <!-- button - play -->
-                <a id="play-video" class="video-play-button-2" href="#">
+                <a id="play-video-2" class="video-play-button-2" href="#">
                   <span></span>
                 </a>
 
-                <div id="video-overlay" class="video-overlay">
-                  <a class="video-overlay-close">&times;</a>
+                <div id="video-overlay-2" class="video-overlay-2">
+                  <a class="video-overlay-close-2">&times;</a>
                 </div>
 
-                <img src="img/Slice-2.png" alt="#">
+                <img class="img-video-2" src="img/Slice-2.png" alt="#">
+
+
+
 
               </div>
             </div>
@@ -216,6 +219,10 @@
         </div>
       </div>
     </section>
+
+    <script>
+
+    </script>
 
     <!-- ⁡⁢⁣⁢+ ⁡⁡⁢⁣⁢Section Sourcse⁡ -->
     <section class="sourcs sourcse-bg" style="padding: 50px 0;" id="intro-2">
@@ -310,21 +317,7 @@
                 <!-- colon-3 -->
                 <div class="accordion-block-item__colon  col-anim-3"></div>
 
-                <!-- === ⁡⁢⁣⁢Colons 2⁡ ===  -->
-                <!-- colon-1 -->
-                <div class="accordion-block-item__colon" style="display: none;"></div>
-                <!-- colon-2 -->
-                <div class="accordion-block-item__colon" style="display: none;"></div>
-                <!-- colon-3 -->
-                <div class="accordion-block-item__colon" style="display: none;"></div>
 
-                <!-- === ⁡⁢⁣⁢Colons 3⁡ ===  -->
-                <!-- colon-1 -->
-                <div class="accordion-block-item__colon " style="display: none;"></div>
-                <!-- colon-2 -->
-                <div class="accordion-block-item__colon" style="display: none;"></div>
-                <!-- colon-3 -->
-                <div class="accordion-block-item__colon" style="display: none;"></div>
 
                 <!-- accordion-block icon -->
                 <div class="accordion-block-icon">
@@ -420,22 +413,24 @@
           <!-- video block  -->
           <div class="programs-video">
             <div class="programs-video__wrapper">
-              <div class="video-wrapper">
+              <div class="video-wrapper-3">
                 <!-- Вставить видео  -->
                 <!-- button - play -->
-                <a id="play-video" class="video-play-button-3" href="#">
+                <a id="play-video-3" class="video-play-button-3" href="#">
                   <span></span>
                 </a>
 
-                <div id="video-overlay" class="video-overlay">
-                  <a class="video-overlay-close">&times;</a>
+                <div id="video-overlay-3" class="video-overlay-3">
+                  <a class="video-overlay-close-3">&times;</a>
                 </div>
 
-                <!-- заставка img -->
                 <img class="img-video-3" src="img/video-img-3.jpg" alt="#">
 
 
+
+
               </div>
+
 
             </div>
           </div>
@@ -488,10 +483,10 @@
                         perferendis debitis, officia, </p>
                       <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.
-                        recusandae fugiat a! Animi, vero.</p>
+                      </p>
                       <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.
-                        fugiat a! Animi, vero.</p>
+                      </p>
                     </div>
                     <!-- from -->
                     <div class="block__item__from"> is Available :<span
@@ -745,8 +740,10 @@
     <!-- ⁡⁢⁣⁢+⁡ ⁡⁢⁣⁢Section Help⁡ -->
     <section class="help" id="intro-4">
       <div class="container--help">
-        <!-- slider -->
-        <div class="slider">
+
+        <!-- help wrapper -->
+        <div class="help-wrapper">
+
           <!-- block left -->
           <div class="help-block-left">
             <!-- text -->
@@ -759,8 +756,7 @@
                 nulla? Ullam eius doloremque laboriosam in! Animi, fugiat exercitationem. Lorem
                 ipsum
                 dolor sit amet, consectetur adipisicing elit. Optio obcaecati culpa sapiente nulla
-                dolorum ut repellat cumque recusandae reprehenderit perspiciatis vel magnam, dolores
-                nemo rerum. Id dolore nihil officiis ipsam!</p>
+              </p>
               <div class="help-text__wrapper-btn">
                 <!-- btn -->
                 <a href="#" class="btn btn--dark-green">View all projects</a>
@@ -769,80 +765,81 @@
               </div>
             </div>
           </div>
-
-
           <!-- slider -->
-          <div class="slider__container">
-            <div class="slider__wrapper">
-              <div class="slider__items">
-                <div class="slider__item">
-                  <!-- Контент 1 слайда -->
-                  <div class="slider-card">
+          <div class="slider">
 
-                    <div class="slider-card__bg">
-                      <!--blok text-img -->
-                      <div class="slider-card-block-text-img__wrapper">
-                        <!-- triangle -->
-                        <div class="slider-card__block-text-img-triangle"></div>
-                        <div class="slider-card__block-text-img"><span
-                            class="slider-card-block__text-img-span">Education</span></div>
-                      </div>
-                      <!-- img -->
-                      <div class="slider-card__wrapper-img">
+            <!-- slider -->
+            <div class="slider__container">
+              <div class="slider__wrapper">
+                <div class="slider__items">
+                  <div class="slider__item">
+                    <!-- Контент 1 слайда -->
+                    <div class="slider-card">
 
-
-                        <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
-                      </div>
-
-                      <div class="slider-card__wrapper-text-bar">
-                        <!-- text -->
-                        <div class="slider-card__text">
-                          <!-- project text-->
-                          <!-- <div> -->
-                          <div class="slider-card__text__project-name-on">Project Name</div>
-                          <div class="slider-card__text__line"></div>
-                          <div class="slider-card__text__project-name-two">Kenya</div>
+                      <div class="slider-card__bg">
+                        <!--blok text-img -->
+                        <div class="slider-card-block-text-img__wrapper">
+                          <!-- triangle -->
+                          <div class="slider-card__block-text-img-triangle"></div>
+                          <div class="slider-card__block-text-img"><span
+                              class="slider-card-block__text-img-span">Education</span></div>
                         </div>
-                        <div>
-                          <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
-                            voluptas
-                            quis optio dolore?</p>
+                        <!-- img -->
+                        <div class="slider-card__wrapper-img">
+
+
+                          <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
                         </div>
-                        <!-- progress bar -->
-                        <div class="slider-card__progress-bar">
-                          <div class="slider-card__progress-bar__wrapper-number">
-                            <!-- numbers -->
-                            <span class="slider-card__progress-bar__number-1">$10.000</span>
-                            <span class="slider-card__progress-bar__number-2">50%</span>
-                            <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+
+                        <div class="slider-card__wrapper-text-bar">
+                          <!-- text -->
+                          <div class="slider-card__text">
+                            <!-- project text-->
+                            <!-- <div> -->
+                            <div class="slider-card__text__project-name-on">Project Name</div>
+                            <div class="slider-card__text__line"></div>
+                            <div class="slider-card__text__project-name-two">Kenya</div>
                           </div>
-                          <!-- bar -->
-                          <div class="slider-card__progress-bar__items">
-                            <div class="slider-card__progress-bar__item__left"></div>
-                            <div class="slider-card__progress-bar__item__line"></div>
-                            <div class="slider-card__progress-bar__item__right"></div>
+                          <div>
+                            <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
+                              voluptas
+                              quis optio dolore?</p>
                           </div>
+                          <!-- progress bar -->
+                          <div class="slider-card__progress-bar">
+                            <div class="slider-card__progress-bar__wrapper-number">
+                              <!-- numbers -->
+                              <span class="slider-card__progress-bar__number-1">$10.000</span>
+                              <span class="slider-card__progress-bar__number-2">50%</span>
+                              <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+                            </div>
+                            <!-- bar -->
+                            <div class="slider-card__progress-bar__items">
+                              <div class="slider-card__progress-bar__item__left"></div>
+                              <div class="slider-card__progress-bar__item__line"></div>
+                              <div class="slider-card__progress-bar__item__right"></div>
+                            </div>
 
-                          <!-- btn and likes -->
-                          <div class="slider-card__btn-likes">
-                            <!-- btn -->
-                            <a href="#" class="btn btn-card ">Donate <span
-                                class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
-                                  viewBox="0 0 24 24" width="14" height="24">
-                                  <path
-                                    d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
-                                  </path>
-                                </svg></span> </a>
-                            <!-- likes -->
-                            <p class="slider-card__likes">
-                              <span class="slider-card__likes__icon"><svg version="1.1" id="Layer_1"
-                                  x="0px" y="0px" viewBox="0 0 512 512"
-                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <!-- btn and likes -->
+                            <div class="slider-card__btn-likes">
+                              <!-- btn -->
+                              <a href="#" class="btn btn-card ">Donate <span
+                                  class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 24 24" width="14" height="24">
+                                    <path
+                                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
+                                    </path>
+                                  </svg></span> </a>
+                              <!-- likes -->
+                              <p class="slider-card__likes">
+                                <span class="slider-card__likes__icon"><svg version="1.1"
+                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
 
 
-                                  <path
-                                    d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
+                                    <path
+                                      d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
                                       			c-2.475-27.115-26.923-48.363-55.616-48.363H324.395c6.485-19.819,16.939-56.149,16.939-85.333c0-46.272-39.317-85.333-64-85.333
                                       			c-22.165,0-38.016,12.459-38.677,12.992c-2.539,2.048-3.989,5.099-3.989,8.341v72.32l-61.44,133.141l-2.56,1.28v-4.075
                                       			c0-5.888-4.779-10.667-10.667-10.667H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64
@@ -858,80 +855,80 @@
                                       			c-1.237,3.264-0.811,6.955,1.195,9.835c2.005,2.88,5.269,4.608,8.789,4.608h146.795c17.792,0,32.896,12.715,34.389,28.971
                                       			c1.131,12.16-4.672,23.723-15.168,30.187c-3.285,2.005-5.205,5.653-5.056,9.493c0.128,3.84,2.347,7.296,5.781,9.067
                                       			c9.003,4.608,14.592,13.653,14.592,23.595C490.603,317.504,480.448,328.832,466.987,330.368z" />
-                                </svg>
-                              </span><span class="slider-card__likes__number"> 12.135</span>
-                            </p>
+                                  </svg>
+                                </span><span class="slider-card__likes__number"> 12.135</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- end -->
                   </div>
-                  <!-- end -->
-                </div>
-                <div class="slider__item">
-                  <!-- Контент 2 слайда -->
-                  <div class="slider-card">
-                    <div class="slider-card__bg">
-                      <div class="slider-card-block-text-img__wrapper">
-                        <!-- triangle -->
-                        <div class="slider-card__block-text-img-triangle"></div>
-                        <div class="slider-card__block-text-img"><span
-                            class="slider-card-block__text-img-span">Education</span></div>
-                      </div>
-                      <!-- img -->
-                      <div class="slider-card__wrapper-img">
-                        <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
-                      </div>
-
-                      <div class="slider-card__wrapper-text-bar">
-                        <!-- text -->
-                        <div class="slider-card__text">
-                          <!-- project text-->
-                          <!-- <div> -->
-                          <div class="slider-card__text__project-name-on">Project Name</div>
-                          <div class="slider-card__text__line"></div>
-                          <div class="slider-card__text__project-name-two">Kenya</div>
+                  <div class="slider__item">
+                    <!-- Контент 2 слайда -->
+                    <div class="slider-card">
+                      <div class="slider-card__bg">
+                        <div class="slider-card-block-text-img__wrapper">
+                          <!-- triangle -->
+                          <div class="slider-card__block-text-img-triangle"></div>
+                          <div class="slider-card__block-text-img"><span
+                              class="slider-card-block__text-img-span">Education</span></div>
                         </div>
-                        <div>
-                          <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
-                            voluptas
-                            quis optio dolore?</p>
+                        <!-- img -->
+                        <div class="slider-card__wrapper-img">
+                          <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
                         </div>
-                        <!-- progress bar -->
-                        <div class="slider-card__progress-bar">
-                          <div class="slider-card__progress-bar__wrapper-number">
-                            <!-- numbers -->
-                            <span class="slider-card__progress-bar__number-1">$10.000</span>
-                            <span class="slider-card__progress-bar__number-2">50%</span>
-                            <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+
+                        <div class="slider-card__wrapper-text-bar">
+                          <!-- text -->
+                          <div class="slider-card__text">
+                            <!-- project text-->
+                            <!-- <div> -->
+                            <div class="slider-card__text__project-name-on">Project Name</div>
+                            <div class="slider-card__text__line"></div>
+                            <div class="slider-card__text__project-name-two">Kenya</div>
                           </div>
-                          <!-- bar -->
-                          <div class="slider-card__progress-bar__items">
-                            <div class="slider-card__progress-bar__item__left"></div>
-                            <div class="slider-card__progress-bar__item__line"></div>
-                            <div class="slider-card__progress-bar__item__right"></div>
+                          <div>
+                            <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
+                              voluptas
+                              quis optio dolore?</p>
                           </div>
+                          <!-- progress bar -->
+                          <div class="slider-card__progress-bar">
+                            <div class="slider-card__progress-bar__wrapper-number">
+                              <!-- numbers -->
+                              <span class="slider-card__progress-bar__number-1">$10.000</span>
+                              <span class="slider-card__progress-bar__number-2">50%</span>
+                              <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+                            </div>
+                            <!-- bar -->
+                            <div class="slider-card__progress-bar__items">
+                              <div class="slider-card__progress-bar__item__left"></div>
+                              <div class="slider-card__progress-bar__item__line"></div>
+                              <div class="slider-card__progress-bar__item__right"></div>
+                            </div>
 
-                          <!-- btn and likes -->
-                          <div class="slider-card__btn-likes">
-                            <!-- btn -->
-                            <a href="#" class="btn btn-card ">Donate <span
-                                class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
-                                  viewBox="0 0 24 24" width="14" height="24">
-                                  <path
-                                    d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
-                                  </path>
-                                </svg></span> </a>
-                            <!-- likes -->
-                            <p class="slider-card__likes">
-                              <span class="slider-card__likes__icon"><svg version="1.1" id="Layer_1"
-                                  x="0px" y="0px" viewBox="0 0 512 512"
-                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <!-- btn and likes -->
+                            <div class="slider-card__btn-likes">
+                              <!-- btn -->
+                              <a href="#" class="btn btn-card ">Donate <span
+                                  class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 24 24" width="14" height="24">
+                                    <path
+                                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
+                                    </path>
+                                  </svg></span> </a>
+                              <!-- likes -->
+                              <p class="slider-card__likes">
+                                <span class="slider-card__likes__icon"><svg version="1.1"
+                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
 
 
-                                  <path
-                                    d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
+                                    <path
+                                      d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
                                         			c-2.475-27.115-26.923-48.363-55.616-48.363H324.395c6.485-19.819,16.939-56.149,16.939-85.333c0-46.272-39.317-85.333-64-85.333
                                         			c-22.165,0-38.016,12.459-38.677,12.992c-2.539,2.048-3.989,5.099-3.989,8.341v72.32l-61.44,133.141l-2.56,1.28v-4.075
                                         			c0-5.888-4.779-10.667-10.667-10.667H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64
@@ -947,80 +944,80 @@
                                         			c-1.237,3.264-0.811,6.955,1.195,9.835c2.005,2.88,5.269,4.608,8.789,4.608h146.795c17.792,0,32.896,12.715,34.389,28.971
                                         			c1.131,12.16-4.672,23.723-15.168,30.187c-3.285,2.005-5.205,5.653-5.056,9.493c0.128,3.84,2.347,7.296,5.781,9.067
                                         			c9.003,4.608,14.592,13.653,14.592,23.595C490.603,317.504,480.448,328.832,466.987,330.368z" />
-                                </svg>
-                              </span><span class="slider-card__likes__number"> 12.135</span>
-                            </p>
+                                  </svg>
+                                </span><span class="slider-card__likes__number"> 12.135</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- end -->
                   </div>
-                  <!-- end -->
-                </div>
-                <div class="slider__item">
-                  <!-- Контент 3 слайда -->
-                  <div class="slider-card">
-                    <div class="slider-card__bg">
-                      <div class="slider-card-block-text-img__wrapper">
-                        <!-- triangle -->
-                        <div class="slider-card__block-text-img-triangle"></div>
-                        <div class="slider-card__block-text-img"><span
-                            class="slider-card-block__text-img-span">Education</span></div>
-                      </div>
-                      <!-- img -->
-                      <div class="slider-card__wrapper-img">
-                        <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
-                      </div>
-
-                      <div class="slider-card__wrapper-text-bar">
-                        <!-- text -->
-                        <div class="slider-card__text">
-                          <!-- project text-->
-                          <!-- <div> -->
-                          <div class="slider-card__text__project-name-on">Project Name</div>
-                          <div class="slider-card__text__line"></div>
-                          <div class="slider-card__text__project-name-two">Kenya</div>
+                  <div class="slider__item">
+                    <!-- Контент 3 слайда -->
+                    <div class="slider-card">
+                      <div class="slider-card__bg">
+                        <div class="slider-card-block-text-img__wrapper">
+                          <!-- triangle -->
+                          <div class="slider-card__block-text-img-triangle"></div>
+                          <div class="slider-card__block-text-img"><span
+                              class="slider-card-block__text-img-span">Education</span></div>
                         </div>
-                        <div>
-                          <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
-                            voluptas
-                            quis optio dolore?</p>
+                        <!-- img -->
+                        <div class="slider-card__wrapper-img">
+                          <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
                         </div>
-                        <!-- progress bar -->
-                        <div class="slider-card__progress-bar">
-                          <div class="slider-card__progress-bar__wrapper-number">
-                            <!-- numbers -->
-                            <span class="slider-card__progress-bar__number-1">$10.000</span>
-                            <span class="slider-card__progress-bar__number-2">50%</span>
-                            <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+
+                        <div class="slider-card__wrapper-text-bar">
+                          <!-- text -->
+                          <div class="slider-card__text">
+                            <!-- project text-->
+                            <!-- <div> -->
+                            <div class="slider-card__text__project-name-on">Project Name</div>
+                            <div class="slider-card__text__line"></div>
+                            <div class="slider-card__text__project-name-two">Kenya</div>
                           </div>
-                          <!-- bar -->
-                          <div class="slider-card__progress-bar__items">
-                            <div class="slider-card__progress-bar__item__left"></div>
-                            <div class="slider-card__progress-bar__item__line"></div>
-                            <div class="slider-card__progress-bar__item__right"></div>
+                          <div>
+                            <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
+                              voluptas
+                              quis optio dolore?</p>
                           </div>
+                          <!-- progress bar -->
+                          <div class="slider-card__progress-bar">
+                            <div class="slider-card__progress-bar__wrapper-number">
+                              <!-- numbers -->
+                              <span class="slider-card__progress-bar__number-1">$10.000</span>
+                              <span class="slider-card__progress-bar__number-2">50%</span>
+                              <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+                            </div>
+                            <!-- bar -->
+                            <div class="slider-card__progress-bar__items">
+                              <div class="slider-card__progress-bar__item__left"></div>
+                              <div class="slider-card__progress-bar__item__line"></div>
+                              <div class="slider-card__progress-bar__item__right"></div>
+                            </div>
 
-                          <!-- btn and likes -->
-                          <div class="slider-card__btn-likes">
-                            <!-- btn -->
-                            <a href="#" class="btn btn-card ">Donate <span
-                                class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
-                                  viewBox="0 0 24 24" width="14" height="24">
-                                  <path
-                                    d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
-                                  </path>
-                                </svg></span> </a>
-                            <!-- likes -->
-                            <p class="slider-card__likes">
-                              <span class="slider-card__likes__icon"><svg version="1.1" id="Layer_1"
-                                  x="0px" y="0px" viewBox="0 0 512 512"
-                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <!-- btn and likes -->
+                            <div class="slider-card__btn-likes">
+                              <!-- btn -->
+                              <a href="#" class="btn btn-card ">Donate <span
+                                  class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 24 24" width="14" height="24">
+                                    <path
+                                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
+                                    </path>
+                                  </svg></span> </a>
+                              <!-- likes -->
+                              <p class="slider-card__likes">
+                                <span class="slider-card__likes__icon"><svg version="1.1"
+                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
 
 
-                                  <path
-                                    d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
+                                    <path
+                                      d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
                                                         			c-2.475-27.115-26.923-48.363-55.616-48.363H324.395c6.485-19.819,16.939-56.149,16.939-85.333c0-46.272-39.317-85.333-64-85.333
                                                         			c-22.165,0-38.016,12.459-38.677,12.992c-2.539,2.048-3.989,5.099-3.989,8.341v72.32l-61.44,133.141l-2.56,1.28v-4.075
                                                         			c0-5.888-4.779-10.667-10.667-10.667H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64
@@ -1036,80 +1033,80 @@
                                                         			c-1.237,3.264-0.811,6.955,1.195,9.835c2.005,2.88,5.269,4.608,8.789,4.608h146.795c17.792,0,32.896,12.715,34.389,28.971
                                                         			c1.131,12.16-4.672,23.723-15.168,30.187c-3.285,2.005-5.205,5.653-5.056,9.493c0.128,3.84,2.347,7.296,5.781,9.067
                                                         			c9.003,4.608,14.592,13.653,14.592,23.595C490.603,317.504,480.448,328.832,466.987,330.368z" />
-                                </svg>
-                              </span><span class="slider-card__likes__number"> 12.135</span>
-                            </p>
+                                  </svg>
+                                </span><span class="slider-card__likes__number"> 12.135</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- end -->
                   </div>
-                  <!-- end -->
-                </div>
-                <div class="slider__item">
-                  <!-- Контент 4 слайда -->
-                  <div class="slider-card">
-                    <div class="slider-card__bg">
-                      <div class="slider-card-block-text-img__wrapper">
-                        <!-- triangle -->
-                        <div class="slider-card__block-text-img-triangle"></div>
-                        <div class="slider-card__block-text-img"><span
-                            class="slider-card-block__text-img-span">Education</span></div>
-                      </div>
-                      <!-- img -->
-                      <div class="slider-card__wrapper-img">
-                        <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
-                      </div>
-
-                      <div class="slider-card__wrapper-text-bar">
-                        <!-- text -->
-                        <div class="slider-card__text">
-                          <!-- project text-->
-                          <!-- <div> -->
-                          <div class="slider-card__text__project-name-on">Project Name</div>
-                          <div class="slider-card__text__line"></div>
-                          <div class="slider-card__text__project-name-two">Kenya</div>
+                  <div class="slider__item">
+                    <!-- Контент 4 слайда -->
+                    <div class="slider-card">
+                      <div class="slider-card__bg">
+                        <div class="slider-card-block-text-img__wrapper">
+                          <!-- triangle -->
+                          <div class="slider-card__block-text-img-triangle"></div>
+                          <div class="slider-card__block-text-img"><span
+                              class="slider-card-block__text-img-span">Education</span></div>
                         </div>
-                        <div>
-                          <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
-                            voluptas
-                            quis optio dolore?</p>
+                        <!-- img -->
+                        <div class="slider-card__wrapper-img">
+                          <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
                         </div>
-                        <!-- progress bar -->
-                        <div class="slider-card__progress-bar">
-                          <div class="slider-card__progress-bar__wrapper-number">
-                            <!-- numbers -->
-                            <span class="slider-card__progress-bar__number-1">$10.000</span>
-                            <span class="slider-card__progress-bar__number-2">50%</span>
-                            <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+
+                        <div class="slider-card__wrapper-text-bar">
+                          <!-- text -->
+                          <div class="slider-card__text">
+                            <!-- project text-->
+                            <!-- <div> -->
+                            <div class="slider-card__text__project-name-on">Project Name</div>
+                            <div class="slider-card__text__line"></div>
+                            <div class="slider-card__text__project-name-two">Kenya</div>
                           </div>
-                          <!-- bar -->
-                          <div class="slider-card__progress-bar__items">
-                            <div class="slider-card__progress-bar__item__left"></div>
-                            <div class="slider-card__progress-bar__item__line"></div>
-                            <div class="slider-card__progress-bar__item__right"></div>
+                          <div>
+                            <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
+                              voluptas
+                              quis optio dolore?</p>
                           </div>
+                          <!-- progress bar -->
+                          <div class="slider-card__progress-bar">
+                            <div class="slider-card__progress-bar__wrapper-number">
+                              <!-- numbers -->
+                              <span class="slider-card__progress-bar__number-1">$10.000</span>
+                              <span class="slider-card__progress-bar__number-2">50%</span>
+                              <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+                            </div>
+                            <!-- bar -->
+                            <div class="slider-card__progress-bar__items">
+                              <div class="slider-card__progress-bar__item__left"></div>
+                              <div class="slider-card__progress-bar__item__line"></div>
+                              <div class="slider-card__progress-bar__item__right"></div>
+                            </div>
 
-                          <!-- btn and likes -->
-                          <div class="slider-card__btn-likes">
-                            <!-- btn -->
-                            <a href="#" class="btn btn-card ">Donate <span
-                                class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
-                                  viewBox="0 0 24 24" width="14" height="24">
-                                  <path
-                                    d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
-                                  </path>
-                                </svg></span> </a>
-                            <!-- likes -->
-                            <p class="slider-card__likes">
-                              <span class="slider-card__likes__icon"><svg version="1.1" id="Layer_1"
-                                  x="0px" y="0px" viewBox="0 0 512 512"
-                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <!-- btn and likes -->
+                            <div class="slider-card__btn-likes">
+                              <!-- btn -->
+                              <a href="#" class="btn btn-card ">Donate <span
+                                  class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 24 24" width="14" height="24">
+                                    <path
+                                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
+                                    </path>
+                                  </svg></span> </a>
+                              <!-- likes -->
+                              <p class="slider-card__likes">
+                                <span class="slider-card__likes__icon"><svg version="1.1"
+                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
 
 
-                                  <path
-                                    d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
+                                    <path
+                                      d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
                                                                           			c-2.475-27.115-26.923-48.363-55.616-48.363H324.395c6.485-19.819,16.939-56.149,16.939-85.333c0-46.272-39.317-85.333-64-85.333
                                                                           			c-22.165,0-38.016,12.459-38.677,12.992c-2.539,2.048-3.989,5.099-3.989,8.341v72.32l-61.44,133.141l-2.56,1.28v-4.075
                                                                           			c0-5.888-4.779-10.667-10.667-10.667H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64
@@ -1125,22 +1122,112 @@
                                                                           			c-1.237,3.264-0.811,6.955,1.195,9.835c2.005,2.88,5.269,4.608,8.789,4.608h146.795c17.792,0,32.896,12.715,34.389,28.971
                                                                           			c1.131,12.16-4.672,23.723-15.168,30.187c-3.285,2.005-5.205,5.653-5.056,9.493c0.128,3.84,2.347,7.296,5.781,9.067
                                                                           			c9.003,4.608,14.592,13.653,14.592,23.595C490.603,317.504,480.448,328.832,466.987,330.368z" />
-                                </svg>
-                              </span><span class="slider-card__likes__number"> 12.135</span>
-                            </p>
+                                  </svg>
+                                </span><span class="slider-card__likes__number"> 12.135</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- end -->
                   </div>
-                  <!-- end -->
+                  <div class="slider__item">
+                    <!-- Контент 5 слайда -->
+                    <div class="slider-card">
+                      <div class="slider-card__bg">
+                        <div class="slider-card-block-text-img__wrapper">
+                          <!-- triangle -->
+                          <div class="slider-card__block-text-img-triangle"></div>
+                          <div class="slider-card__block-text-img"><span
+                              class="slider-card-block__text-img-span">Education</span></div>
+                        </div>
+                        <!-- img -->
+                        <div class="slider-card__wrapper-img">
+                          <img class="slider-card__img" src="img/card_cr.jpg" alt="#">
+                        </div>
+
+                        <div class="slider-card__wrapper-text-bar">
+                          <!-- text -->
+                          <div class="slider-card__text">
+                            <!-- project text-->
+                            <!-- <div> -->
+                            <div class="slider-card__text__project-name-on">Project Name</div>
+                            <div class="slider-card__text__line"></div>
+                            <div class="slider-card__text__project-name-two">Kenya</div>
+                          </div>
+                          <div>
+                            <p class="slider-card__text__p">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Eius expedita vel laborum incidunt aperiam quod rem
+                              voluptas
+                              quis optio dolore?</p>
+                          </div>
+                          <!-- progress bar -->
+                          <div class="slider-card__progress-bar">
+                            <div class="slider-card__progress-bar__wrapper-number">
+                              <!-- numbers -->
+                              <span class="slider-card__progress-bar__number-1">$10.000</span>
+                              <span class="slider-card__progress-bar__number-2">50%</span>
+                              <span class="slider-card__progress-bar__number-3"> of $20.000</span>
+                            </div>
+                            <!-- bar -->
+                            <div class="slider-card__progress-bar__items">
+                              <div class="slider-card__progress-bar__item__left"></div>
+                              <div class="slider-card__progress-bar__item__line"></div>
+                              <div class="slider-card__progress-bar__item__right"></div>
+                            </div>
+
+                            <!-- btn and likes -->
+                            <div class="slider-card__btn-likes">
+                              <!-- btn -->
+                              <a href="#" class="btn btn-card ">Donate <span
+                                  class="btn-card__icon"><svg id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 24 24" width="14" height="24">
+                                    <path
+                                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z">
+                                    </path>
+                                  </svg></span> </a>
+                              <!-- likes -->
+                              <p class="slider-card__likes">
+                                <span class="slider-card__likes__icon"><svg version="1.1"
+                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+
+                                    <path
+                                      d="M512,304.021c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.019-25.536,13.632-40.725
+                                                                                            			c-2.475-27.115-26.923-48.363-55.616-48.363H324.395c6.485-19.819,16.939-56.149,16.939-85.333c0-46.272-39.317-85.333-64-85.333
+                                                                                            			c-22.165,0-38.016,12.459-38.677,12.992c-2.539,2.048-3.989,5.099-3.989,8.341v72.32l-61.44,133.141l-2.56,1.28v-4.075
+                                                                                            			c0-5.888-4.779-10.667-10.667-10.667H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64
+                                                                                            			c23.083,0,42.773-14.72,50.219-35.243c17.749,9.131,41.643,13.931,56.469,13.931H419.84c23.232,0,43.541-15.68,48.32-37.269
+                                                                                            			c2.453-11.115,1.024-22.315-3.84-32.043c15.744-7.936,26.347-24.171,26.347-42.688c0-7.552-1.728-14.784-5.013-21.333
+                                                                                            			C501.397,338.752,512,322.517,512,304.021z M149.333,448c0,17.643-14.379,32-32,32h-64c-17.664,0-32-14.357-32-32V277.333
+                                                                                            			c0-17.643,14.357-32,32-32v0.107h95.957v10.667c0,0.064,0.043,0.107,0.043,0.171V448z M466.987,330.368
+                                                                                            			c-4.117,0.469-7.595,3.264-8.896,7.211c-1.301,3.925-0.235,8.277,2.795,11.115c5.44,5.141,8.427,12.011,8.427,19.349
+                                                                                            			c0,13.44-10.155,24.768-23.637,26.304c-4.117,0.469-7.595,3.264-8.896,7.211c-1.301,3.925-0.235,8.277,2.795,11.115
+                                                                                            			c7.04,6.635,9.856,15.936,7.744,25.472c-2.624,11.883-14.187,20.523-27.499,20.523H224c-15.851,0-41.365-6.848-53.333-15.744
+                                                                                            			V262.656l15.381-7.68c2.155-1.088,3.883-2.88,4.907-5.077l64-138.667c0.64-1.387,0.981-2.923,0.981-4.459V37.909
+                                                                                            			c4.437-2.453,12.139-5.803,21.333-5.803c11.691,0,42.667,29.077,42.667,64c0,37.525-20.416,91.669-20.629,92.203
+                                                                                            			c-1.237,3.264-0.811,6.955,1.195,9.835c2.005,2.88,5.269,4.608,8.789,4.608h146.795c17.792,0,32.896,12.715,34.389,28.971
+                                                                                            			c1.131,12.16-4.672,23.723-15.168,30.187c-3.285,2.005-5.205,5.653-5.056,9.493c0.128,3.84,2.347,7.296,5.781,9.067
+                                                                                            			c9.003,4.608,14.592,13.653,14.592,23.595C490.603,317.504,480.448,328.832,466.987,330.368z" />
+                                  </svg>
+                                </span><span class="slider-card__likes__number"> 12.135</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+            <a href="#" class="slider__control position-prev" data-slide="prev"></a>
+            <a href="#" class="slider__control position-next" data-slide="next"></a>
           </div>
-          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-          <a href="#" class="slider__control position-prev" data-slide="prev"></a>
-          <a href="#" class="slider__control position-next" data-slide="next"></a>
         </div>
       </div>
 
