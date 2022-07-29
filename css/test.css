@@ -209,3 +209,17 @@
   font-weight: 600;
   line-height: 1.2;
 }
+
+/* ======= Swiper ====== */
+.swiper {
+  width: 600px;
+  /* height: 300px; */
+  background: rgb(163, 153, 153);
+}
+
+.swiper-button-prev {
+  background: #fe9d3a;
+}
+.swiper-button-next {
+  background: #fe9d3a;
+}

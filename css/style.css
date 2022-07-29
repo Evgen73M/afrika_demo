@@ -446,8 +446,8 @@ a {
 .video-play-button span {
   display: block;
   position: relative;
-  top: 10px;
-  left: 7px;
+  top: -2px;
+  left: -3px;
   z-index: 3;
   width: 0;
   height: 0;
@@ -512,8 +512,8 @@ a {
 .video-overlay-close-3 {
   position: absolute;
   z-index: 1000;
-  top: -11px;
-  right: 20px;
+  top: -6px;
+  right: 13px;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
@@ -554,7 +554,7 @@ a {
 }
 .video-overlay-3 iframe {
   width: 100%;
-  height: 75%;
+  height: 100%;
 }
 
 /* img -video */
@@ -562,6 +562,10 @@ a {
 .img-video {
 }
 
+.img-video-4 {
+  border-radius: 15px;
+  display: none;
+}
 .img-video-2 {
   border-radius: 15px;
 }
@@ -574,18 +578,36 @@ a {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .video-overlay iframe {
+    width: 100%;
+    height: 65%;
+    /* padding-bottom: 56%; */
+    margin-top: 0px;
+  }
   .img-video-2 {
     padding: 0 10%;
   }
   .video-overlay-close-2 {
-    top: -26px;
+    top: -83px;
     right: 20px;
     font-size: 59px;
+  }
+
+  .video-overlay-2 iframe {
+    width: 95%;
+    height: 94%;
+    margin-top: 0;
   }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .img-video-4 {
+    display: block;
+  }
+  .img-video-3 {
+    display: none;
+  }
   .video-overlay-close {
     top: -48px;
     right: 20px;
@@ -596,11 +618,16 @@ a {
     right: 20px;
     font-size: 55px;
   }
+
+  .video-wrapper-3 {
+    width: 100%;
+    /* height: 40vh; */
+  }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .⁡⁢⁣⁢video-play-button⁡,
+  .video-play-button,
   .video-play-button-2,
   .video-play-button-3 {
     width: 27px;
@@ -609,8 +636,7 @@ a {
     border-radius: 50%;
     padding: 10px 15px 10px 15px;
   }
-
-  video-play-button:before,
+  */ video-play-button:before,
   .video-play-button-2before,
   .video-play-button-3:before {
     display: block;
