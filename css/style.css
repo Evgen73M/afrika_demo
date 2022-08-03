@@ -752,7 +752,7 @@ iframe .video-overlay-close-3 {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .nav__menu {
     flex-direction: column;
     align-items: center;
