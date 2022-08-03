@@ -8,6 +8,7 @@ class ItcAccordion {
     this._config = Object.assign(defaultConfig, config);
     this.addEventListener();
   }
+
   addEventListener() {
     this._el.addEventListener("click", (e) => {
       const elHeader = e.target.closest(".accordion__header");
